@@ -1,0 +1,87 @@
+================================================================================
+MGWR Version: 2.2.1
+Released on: 03/20/2020
+Source code is available at: https://github.com/pysal/mgwr
+Development Team: Ziqi Li, Taylor Oshan, Stewart Fotheringham, Wei Kang, 
+Levi Wolf, Hanchen Yu, Mehak Sachdeva, and Sarah Bardin
+Spatial Analysis Research Center (SPARC)
+Arizona State University, Tempe, USA
+================================================================================
+Model type:                                                             Gaussian
+Number of observations:                                                      159
+Number of covariates:                                                          7
+Dependent variable:                                                     bachelor
+Variable standardization:                                                     On
+Total runtime:                                                           0:00:02
+
+Global Regression Results
+--------------------------------------------------------------------------------
+Residual sum of squares:                                                  26.326
+Log-likelihood:                                                          -82.644
+AIC:                                                                     179.288
+AICc:                                                                    182.248
+R2:                                                                        0.834
+Adj. R2:                                                                   0.828
+
+Variable                                   Est.         SE  t(Est/SE)    p-value
+------------------------------------ ---------- ---------- ---------- ----------
+Intercept                                 0.000      0.033      0.000      1.000
+black                                     0.098      0.042      2.370      0.018
+fb                                        0.063      0.038      1.635      0.102
+rural                                     0.055      0.041      1.325      0.185
+income                                    0.883      0.068     13.030      0.000
+lnpop                                     0.120      0.055      2.185      0.029
+poverty                                   0.055      0.060      0.916      0.360
+
+Multiscale Geographically Weighted Regression (MGWR) Results
+--------------------------------------------------------------------------------
+Coordinates type:                                                      Projected
+Spatial kernel:                                                Adaptive bisquare
+Criterion for optimal bandwidth:                                            AICc
+Score of change (SOC) type:                                          Smoothing f
+Termination criterion for MGWR:                                          1.0e-05
+Number of iterations used:                                                    17
+
+MGWR bandwidths
+--------------------------------------------------------------------------------
+Variable                  Bandwidth      ENP_j   Adj t-val(95%)            DoD_j
+Intercept                   157.000      1.518            2.152            0.918
+black                        46.000      8.181            2.779            0.585
+fb                          157.000      1.613            2.177            0.906
+rural                       148.000      1.930            2.249            0.870
+income                       65.000      5.016            2.608            0.682
+lnpop                       157.000      1.402            2.119            0.933
+poverty                     157.000      1.409            2.121            0.932
+
+Diagnostic Information
+--------------------------------------------------------------------------------
+Residual sum of squares:                                                  19.098
+Effective number of parameters (trace(S)):                                21.070
+Degree of freedom (n - trace(S)):                                        137.930
+Sigma estimate:                                                            0.372
+Log-likelihood:                                                          -57.124
+Degree of Dependency (DoD):                                                0.783
+AIC:                                                                     158.388
+AICc:                                                                    165.879
+BIC:                                                                     226.118
+R2:                                                                        0.880
+Adj. R2:                                                                   0.861
+
+Summary Statistics For MGWR Parameter Estimates
+--------------------------------------------------------------------------------
+Variable                        Mean        STD        Min     Median        Max
+--------------------      ---------- ---------- ---------- ---------- ----------
+Intercept                     -0.071      0.008     -0.089     -0.070     -0.053
+black                          0.126      0.117     -0.061      0.109      0.422
+fb                             0.009      0.007     -0.003      0.008      0.025
+rural                          0.030      0.042     -0.021      0.013      0.098
+income                         0.924      0.226      0.572      0.912      1.208
+lnpop                          0.045      0.014      0.026      0.041      0.074
+poverty                        0.098      0.010      0.083      0.096      0.112
+================================================================================
+Acknowledgement:
+We acknowledge the support of the National Science Foundation under Award 1758786 
+from the Geography and Spatial Sciences Program to A. S. Fotheringham which 
+enabled this software to be written and made freely available.
+================================================================================
+
